@@ -1,0 +1,80 @@
+/* Sizing + styling each individual board button */
+.tableButton {
+  width: 65px;
+  height: 65px;
+  margin:  auto; 
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* Centering + aligning the whole board of buttons  */
+#boardButtons {
+  width: 800px; 
+  height: 0px; line-height: 0px;
+  position: absolute;
+  top: 135px; 
+  left: 50%; margin-left:-400px;
+  text-transform: uppercase;
+  text-align:center;
+  display: none;
+}
+
+/* Changing disabled button colour */
+button:disabled {
+  background: rgb(230, 230, 230);
+}
+
+/* Centering + aligning main menu text boxes and start button */
+#nameBoxesStartButton {
+  left: 50%; margin-left:-400px;
+  top: 150px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  width: 800px; 
+ 
+}
+
+/* Sizing + aligning headers */
+h1 {
+  left: 50%; margin-left:-400px;
+  line-height: 70px;
+  position: absolute;
+  text-align: center;
+  width: 800px; 
+  text-decoration: underline
+}
+
+/* Sizing + aligning the play again button */
+#playAgainButton {
+  width: 100px; 
+  height: 30px; 
+  position: absolute;
+  top: 380px;
+  left: 50%; margin-left:-50px;
+  text-align:center;
+  display: none;
+}
+
+/* Sizing + aligning the info para */
+#infoPara {
+  width: 800px; 
+  height: 30px; 
+  position: absolute;
+  top: 335px;
+  left: 50%; margin-left:-400px;
+  text-align:center;
+  display: none;
+}
+
+/* Font of everything */
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Makes any button pink when hovering over it*/
+button:hover {
+  background-color:pink;
+  transition: background-color .6s;
+}
+

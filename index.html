@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- The start menu items -->
+    <div id="startMenu">
+      
+      <h1>Tic Tac Toe</h1>
+      
+      <div id="nameBoxesStartButton">
+        
+        <!-- Input boxes for names -->
+        <input id="player1name" placeholder="Player 1 Name"> 
+        <br><br>
+        <input id="player2name" placeholder="Player 2 Name"> 
+        <br><br><br>
+
+        <button id="startGameButton" onclick="startGame()">Start</button>
+        <p id="feedback"> </p>
+
+      </div>
+
+    </div>
+
+    <!-- The tic-tac-toe board buttons. Each button runs the same function when clicked. The function argument is 'this.id' which passes the id of the button to the function. Each button has a unique id. Each button's text is a blank (&nsbp) -->
+    <div id="boardButtons">
+      
+      <!-- Top 3 buttons -->
+      <button class="tableButton" onclick="playerClick(this.id)" id="0,0">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="0,1">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="0,2">&nbsp</button> 
+
+      <br>
+
+      <!-- Middle 3 buttons -->
+      <button class="tableButton" onclick="playerClick(this.id)" id="1,0">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="1,1">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="1,2">&nbsp</button> 
+      
+      <br>
+
+      <!-- Bottom 3 buttons -->
+      <button class="tableButton" onclick="playerClick(this.id)" id="2,0">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="2,1">&nbsp</button><!-------------><button class="tableButton" onclick="playerClick(this.id)" id="2,2">&nbsp</button> 
+
+
+    </div>
+    
+    <!-- These items are parts of the screen when you are playing -->
+    <h1 id="title"> </h1>
+    <p id="infoPara"> </p>
+    <button id="playAgainButton" onclick="restart()">Play Again</button>
+
+    <script src="library.js"></script>
+    <script src="scriptt.js"></script>
+
+  </body>
+</html>
